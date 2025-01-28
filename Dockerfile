@@ -1,5 +1,5 @@
 FROM openjdk:18
 WORKDIR /app
-COPY ./target/service-registry-0.0.1-SNAPSHOT.jar /app
+COPY ./target/tap-serviceregistry.jar /app
 EXPOSE 8761
-CMD ["java", "-jar", "service-registry-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "tap-serviceregistry.jar"]
